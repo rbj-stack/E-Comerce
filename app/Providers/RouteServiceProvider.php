@@ -44,9 +44,17 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api')
                 ->middleware('api')
                 ->group(base_path('routes/api.php'));
+
+
         });
     }
 
+
+
+   
+    
+    
+    
     /**
      * Configure the rate limiters for the application.
      *

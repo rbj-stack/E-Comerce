@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/logout', 'Auth\LoginController@logout');
+// Route::get('/logout', 'Auth\AuthController@logout');
+
+
+// test users
+
+
+// Route::get('users', function()
+// {
+//     return 'heloo';
+// });
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
