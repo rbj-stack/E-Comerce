@@ -19,6 +19,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
+Route::view("/users",function(){
+    // if(Gate::allows('users',Auth::user())){
+
+    //     return view('users');
+        
+    // }else{
+    //     return "you are not a user !";
+    // }
+});
 // Route::get('/logout', 'Auth\LoginController@logout');
 // Route::get('/logout', 'Auth\AuthController@logout');
 
